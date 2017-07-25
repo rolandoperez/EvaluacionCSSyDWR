@@ -1,0 +1,278 @@
+body {
+	font-family: 'Dancing Script', cursive;	
+	background: black;
+	margin-left: 5%;
+	font-size: 2vw;
+}
+
+
+article
+{
+	box-sizing: border-box;
+	float:left;
+	background-color: grey;
+	padding: 2%;
+	text-align: center;
+	height: 30%	;
+}
+
+
+img[src$='.svg']{
+  border-radius: 50%;
+  float: left;
+}
+
+img[src$='.jpg']{
+  float: center;
+  box-shadow: 2px 2px 6px #02010a;
+}
+
+#Encabezado{	
+	height: 5%;
+	font-size: 60%;
+	text-align: left;
+	text-shadow: 2px 2px 2px #02010a;
+	background: #5b7989; 
+	color: white;
+	border-radius: 10px 10px 0px 0px;
+	
+
+	
+}
+#h1Encabezado{	
+	margin: 0% 1%;
+  	overflow: hidden;
+  	float: left;
+
+}
+#contenido{
+	width: 900px;	
+	margin: 0% auto; 
+
+}
+#wrapper
+{
+	width: 900px;
+	margin: 0 auto;
+}
+.retrato	{	
+		width: 33%;
+} 
+.ulMenuPrincipal{
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+ 
+}
+.liMenuPrincipal{    	
+  	margin: 0% 1%;  
+
+  	float: right;
+
+}
+
+.enlacePaginaActual{
+	text-decoration:none
+
+}
+
+.contenedorpie {
+	
+	display: inline-flex;
+	flex-direction: row;
+
+}
+#disponiblepie .contenedorpie > div {
+	text-align: left;
+	padding: 10px;	
+	width: 25%;
+}	
+
+
+	#columna1	{
+	background-color: #82c3a6;
+	width: 100%;
+	
+	}
+	#columna2 	{
+	background-color: #d5c75f;
+	width: 50%;	
+	}
+	#columna2 img {		
+	transition-property: transform;
+	transition-duration: 1.0s;
+	}
+	#columna3
+	{
+		background-color: #d5c75f;
+		width: 50%;
+	}
+	#columna3 img {
+		transition-property: transform;
+		transition-duration: 1.0s;
+		}	
+	#columna2 img:hover{
+		box-shadow: 2px 2px 6px #82c3a6 ;
+		transform: rotate(10deg);
+	}
+	#columna3 img:hover {
+		transform:  translate(20px, -5px);
+	}	
+
+
+
+
+	#galeria1  {
+	background-color: #d5c75f;
+	width:33.33%;	
+	}
+	#galeria1  img {
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);	
+	}	
+	#galeria2 {
+	background-color: #d5c75f;
+	width: 33.33%;
+	}
+	#galeria2 img{
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);	
+	}	
+	#galeria3 {
+	background-color: #d5c75f;
+	width: 33.33%;
+	}
+	#galeria3 img{	
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);		
+	}	
+	#galeria4 {
+	background-color: #d5c75f;
+	width: 33.33%;
+	}
+	#galeria4 img {	
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);		
+	}	
+	#galeria5 {
+	background-color: #d5c75f;
+	width: 33.33%;
+	}
+	#galeria6 {
+	background-color: #d5c75f;
+	width: 33.33%;	
+	}
+	#galeria6 img {
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);		
+	}	
+
+	
+
+
+
+
+footer {
+	
+	margin-top: 5px;
+	border-top: solid 1px black;
+	padding-top: 5px;
+	text-align: left;	
+	border-radius: 0px 0px 10px 10px;
+	background: #C6d5c5;
+}
+
+
+@media screen and (max-width: 900px){	
+	#Encabezado{	
+		text-align: center;
+		display: inline-block;
+		font-size: 70%;
+		width: 100%;
+		flex-direction: row;
+
+	  	
+	}
+	#h1Encabezado{	
+		margin: auto;  		
+		float: center;
+		width: 100%;
+	}
+	#menu {
+		 clear:both;
+		 float:left;
+		 overflow:hidden;
+		 width:100%;
+
+	}
+
+	
+		
+	#contenido{
+		width: 100%;	
+	}
+	.retrato	{	
+		width: 100%;
+	}	
+	.contenedorpie
+	{
+
+		display: block;		
+	}
+	#wrapper
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#columna1	{	
+		width: 100%;
+	}
+	#columna2	{	
+		width: 100%;
+	}
+	#columna3	{
+		width: 100%;
+	}	
+	#galeria1
+	{
+	background-color: #d5c75f;
+	width:100%;	
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+	}
+	#galeria2
+	{
+	background-color: #d5c75f;
+	width:100%;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+	}
+	#galeria3
+	{
+	background-color: #d5c75f;
+	width:100%;
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);	
+	}
+	#galeria4
+	{
+	background-color: #d5c75f;
+	width:100%;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);	
+	}
+	#galeria5
+	{
+	background-color: #d5c75f;
+	width:100%;
+	}
+	#galeria6
+	{
+	background-color: #d5c75f;
+	width:100%;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);	
+	}
+
+
+}
